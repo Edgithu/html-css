@@ -4,12 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Cadastro</title>
+    <title>Cadastro</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    body{
+        margin: .1px;
+        padding: 0px;
+        background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    }
+    
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-family:sans-serif;
+    
+    }
+    
+    a:hover{
+        color: black;
+        background-color:  rgba(0, 0, 0, 0.418);
+        padding: 3px;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    #header{
+        display: flex;
+        box-sizing: border-box;
+        height: 70px;
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        background: #e5e6e8;
+        position: fixed;
+        width: 100%;
+    }
+    #menu{
+        display: flex;
+        list-style: none;
+        gap: .5rem;
+    }
+    #menu a{
+        display: block;
+        padding: .5rem;
+    }
+    
+    #btn-mobile{
+        display: none;
+    }
+    .imglogo{
+        width: 30%;
+    }
+    @media (max-width: 600px){
+    
+        #btn-mobile{
+             display:block;
         }
+        #menu{
+            display: none;
+        }
+    }           
+        
         .box{
             position: absolute;
             top: 50%;
@@ -82,9 +140,36 @@
         #submit:hover{
             background-color: rgb(66, 160, 253);
         }
+        footer{
+    background: #e5e6e8;
+    color: black;
+    font-size: 12px;
+    padding: 3px ;
+}
+.p{
+    font-size: 14px;
+    text-align: center;
+    color: black;
+}
     </style>
 </head>
 <body>
+    <header id="header">
+        <h2><img  class="imglogo" src="imagens/EDB.jpg" alt="imagenEBD"></h2>
+          <nav id="nav">
+              <button id="btn-mobile">Menu</button>
+              <ul id="menu">
+                  <li><a href="file:///C:/Users/Ediel/OneDrive/Documentos/Estudos/html-css/tete2/home.html">Home</a></li>
+                <li><a href="file:///C:/Users/Ediel/OneDrive/Documentos/Estudos/html-css/tete2/escolas.html">Escolas</a></li>
+                  <li><a href="">Projetos</a></li>
+                  <li><a href="file:///C:/Users/Ediel/OneDrive/Documentos/Estudos/html-css/tete2/contatos.html">Contatos</a></li>
+                  <li><a href="file:///C:/Users/Ediel/OneDrive/Documentos/Estudos/html-css/tete2/login.html">Login</a></li>
+              </ul>
+      
+               </nav>
+               
+      </header>
+  
     <div class="box">
         <form action="">
             <fieldset>
@@ -128,4 +213,7 @@
     </div>
     
 </body>
+<footer>
+    <p class="p" > Site criado por <a  class="p" href="" target="blank">Ediel Pereira</a> .</p>
+</footer>
 </html>
