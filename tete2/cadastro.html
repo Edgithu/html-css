@@ -49,7 +49,7 @@
     }
     #menu a{
         display: block;
-        padding: .5rem;
+        padding: .3rem;
     }
     
     #btn-mobile{
@@ -70,7 +70,7 @@
         
         .box{
             position: absolute;
-            top: 50%;
+            top:57%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0,.6);
@@ -168,40 +168,45 @@
       
                </nav>
                
-      </header>
-  
+      </header>  
     <div class="box">
-        <form action="">
+        <form action="https://sheetdb.io/api/v1/9vqtblq2dhr67" method="post" name="Formulário EBD">
             <fieldset>
                 
                     <legend><b>Cadastro</b></legend><br><br>
                     <div class="inputBox">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                        <label class="labelInput" for="nome">Nome</label>
+                        <input type="file" name="data[Foto]" s>
+                    <div><br><br>                   <div class="inputBox">
+                        <input type="text" name="data[Nome]" id="nome" class="inputUser" required>
+                        <label class="labelInput" for="Nome">Nome</label>
                     </div><br><br>
                     <div class="inputBox">
-                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <input type="password" name="data[Senha]" id="Senha" class="inputUser" required>
+                        <label class="labelInput" for="Senha">Senha</label>
+                    </div><br><br>
+                    <div class="inputBox">
+                        <input type="text" name="data[Email]" id="email" class="inputUser" required>
                         <label class="labelInput" for="Email">Email</label>
                     </div><br><br>
                     <div class="inputBox">
-                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                        <label class="labelInput" for="telefone">Telefone</label>
+                        <input type="tel" name="data[Telefone]" id="telefone" class="inputUser" required>
+                        <label class="labelInput" for="Telefone">Telefone</label>
                     </div>
                     <p>Sexo:</p>
-                    <input type="radio" name="genero" id="femenino" value="femenino" required>
+                    <input type="radio" name="data[Sexo]" id="femenino" value="femenino" required>
                     <label for="femenino">Femenino</label><br>
-                    <input type="radio" name="genero" id="maculino" value="masculino" required>
+                    <input type="radio" name="data[Sexo]" id="masculino" value="masculino" required>
                     <label for="masculino">Masculino</label><br><br>
-                    <label for="data"><b>Data Nascimento:</b></label>
-                    <input type="date" name="data" id="data"  required>
+                    <label for="Data de Nascimento"><b>Data Nascimento:</b></label>
+                    <input type="date" name="data[Data_de_Nascimento]" id="data"  required>
                         
                     <br><br>
                     <div class="inputBox">
-                        <input type="text" name="Cidade" id="Cidade" class="inputUser" required>
+                        <input type="text" name="data[Cidade]" id="Cidade" class="inputUser" required>
                         <label class="labelInput" for="Cidade">Cidade</label>
                     </div> <br><br>
                     <div class="inputBox">
-                        <input type="text" name="Congregação" id="Congregação" class="inputUser" required>
+                        <input type="text" name="data[Congregação]" id="Congregação" class="inputUser" required>
                         <label class="labelInput" for="Congregação">Congregação</label>
                     </div><br>
                     <input type="submit" name="submit" id="submit">
